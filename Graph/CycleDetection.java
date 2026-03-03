@@ -60,6 +60,7 @@ class CycleDetection{
    }
    return false;
  }
+
  public static boolean cycleDetection(ArrayList<Edge> graph[],boolean vis[],int curr,boolean recStack[]){
    vis[curr]=true;
    recStack[curr]=true;
@@ -79,6 +80,7 @@ class CycleDetection{
     vis[curr]=false;
     return false;
  }
+ 
     public static void main(String[] args) {
         int v=6;
         ArrayList<Edge> graph[]=new ArrayList[v];
