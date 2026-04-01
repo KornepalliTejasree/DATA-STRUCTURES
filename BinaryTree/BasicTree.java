@@ -115,11 +115,10 @@ public class BasicTree {
     public static void main(String[] args) {
         int arr[]={5,6,3,2,1};
         Node node=buildTree(arr);
-        preOrder(node);
-        System.out.println();
+       
         levelOrder(node);
-        System.out.println(height(node));
-        System.out.println(balanced(node));
-        System.out.println(diameter(node));
+        // System.out.println(height(node));
+        // System.out.println(balanced(node));
+        // System.out.println(diameter(node));
     }
 }
