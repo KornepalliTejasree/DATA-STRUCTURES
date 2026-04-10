@@ -97,6 +97,18 @@ public static boolean balanced(Node root){
      }
     return balanced(root.left) && balanced(root.right);
 }
+static int max=0;
+public static int diameter(Node root){
+    if(root==null){
+        return 0;
+    }
+    int left=height(root.left);
+    int right=height(root.right);
+    max=Math.max(left+right,max);
+    diameter(root.left);
+    diameter(root.right);
+    return max;
+}
 public static void main(String[] args) {
     int arr[]={1,2,3,4,5,-1,6};
     Node root=buildTree(arr);
